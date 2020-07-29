@@ -1,0 +1,58 @@
+.header {
+    background-size: cover;
+    background-position: center;
+    
+        &-index {          
+            height: 100vh;
+            background-image: url('../multimedia/headerindex.jpg');
+            background-attachment: fixed;
+        }
+        &-quienessomos {
+            height: 70vh;
+            background-image: url('../multimedia/headerquienes.jpg');
+        }
+        &-nuestrasbirras {
+            height: 70vh;
+            background-image: url('../multimedia/headernuestras.jpg');
+        }
+        &-cerveblog {
+            height: 70vh;
+            background-image: url('../multimedia/headerdonde.jpg');
+        }
+        &-contacto {
+            height: 70vh;
+            background-image: url('../multimedia/headercontacto.jpg');
+        }
+        .header__title {
+            padding-top: 10%;
+            width: 100%;
+            text-align: center;
+            font-family: 'Oswald', sans-serif;
+            font-style: italic;
+            color: whitesmoke;
+            text-shadow: 2px 0 0 black;
+            letter-spacing: 2px;
+            font-size: 2.5rem;
+        }
+        .header__maintitle {
+            padding-top: 3%;
+            width: 100%;
+            text-align: center;
+            font-family: 'Oswald', sans-serif;
+            color: whitesmoke;
+            text-shadow: 2px 0 0 black;
+            font-size: 7rem;
+        }
+}
+
+.nav {
+    background-color: rgba(0, 0, 0, 0.144);
+    .nav-link:hover{
+        color: $amarilloalternativo !important;
+    }
+    .nav__navbar {
+        font-family: 'Oswald', sans-serif;
+        color: white;
+        font-size: 2rem;
+    }    
+}

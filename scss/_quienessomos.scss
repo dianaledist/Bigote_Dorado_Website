@@ -1,0 +1,14 @@
+#historia {
+    text-align: center;
+}
+
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.galeria2:hover{
+    opacity: 85%;
+    transform: scale(1.05,1.05);
+}

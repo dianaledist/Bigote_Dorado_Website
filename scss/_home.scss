@@ -1,0 +1,28 @@
+.indexingredientes {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.indexfoto {
+    height: 80vh;
+    background-image: url('../multimedia/indexfoto.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.indexgaleria{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4%;
+    
+    &__card:hover{
+        opacity: 80%;
+    }
+}

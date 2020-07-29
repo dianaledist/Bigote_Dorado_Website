@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;469;500;600;700&display=swap");
+h1 {
+  font-family: 'Oswald', sans-serif;
+  color: #7c1d00;
+  text-align: center;
+  font-size: 4rem; }
+
+h2 {
+  font-size: 3rem;
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  text-align: center; }
+
+.sectiontitle {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%; }
+
+.sectiontitle__title {
+  font-family: 'Oswald', sans-serif;
+  color: #7c1d00;
+  text-align: center;
+  font-size: 5rem;
+  padding: 4%; }
+
+p {
+  font-size: 1.5rem;
+  font-family: 'Oswald', sans-serif;
+  text-align: center; }
+
+.header {
+  background-size: cover;
+  background-position: center; }
+  .header-index {
+    height: 100vh;
+    background-image: url("../multimedia/headerindex.jpg");
+    background-attachment: fixed; }
+  .header-quienessomos {
+    height: 70vh;
+    background-image: url("../multimedia/headerquienes.jpg"); }
+  .header-nuestrasbirras {
+    height: 70vh;
+    background-image: url("../multimedia/headernuestras.jpg"); }
+  .header-cerveblog {
+    height: 70vh;
+    background-image: url("../multimedia/headerdonde.jpg"); }
+  .header-contacto {
+    height: 70vh;
+    background-image: url("../multimedia/headercontacto.jpg"); }
+  .header .header__title {
+    padding-top: 10%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    color: whitesmoke;
+    text-shadow: 2px 0 0 black;
+    letter-spacing: 2px;
+    font-size: 2.5rem; }
+  .header .header__maintitle {
+    padding-top: 3%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: whitesmoke;
+    text-shadow: 2px 0 0 black;
+    font-size: 7rem; }
+
+.nav {
+  background-color: rgba(0, 0, 0, 0.144); }
+  .nav .nav-link:hover {
+    color: #e8ab0e !important; }
+  .nav .nav__navbar {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 2rem; }
+
+.footer {
+  width: 100%;
+  background-color: #3a2114; }
+  .footer__form {
+    width: 50%; }
+  .footer__text {
+    padding: 1%;
+    font-family: 'Oswald', sans-serif;
+    color: whitesmoke; }
+
+.indexingredientes {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+.indexfoto {
+  height: 80vh;
+  background-image: url("../multimedia/indexfoto.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; }
+
+.indexgaleria {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4%; }
+  .indexgaleria__card:hover {
+    opacity: 80%; }
+
+#historia {
+  text-align: center; }
+
+#galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+.galeria2:hover {
+  opacity: 85%;
+  transform: scale(1.05, 1.05); }
+
+#nuestrasbirras {
+  padding: 4%;
+  text-align: center; }
+
+.gridgaleria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "foto1 foto2 foto2 foto2" "foto3 foto3 foto3 foto4" "foto5 foto6 foto6 foto6"; }
+
+.itema {
+  grid-area: foto1; }
+
+.itemb {
+  grid-area: foto2; }
+
+.itemc {
+  grid-area: foto3; }
+
+.itemd {
+  grid-area: foto4; }
+
+.iteme {
+  grid-area: foto5; }
+
+.itemf {
+  grid-area: foto6; }
+
+.fotosgrid {
+  width: 100%;
+  display: block; }
+
+.fotosgrid:hover {
+  opacity: 80%; }
+
+#textoformulario {
+  text-align: left; }
+
+#tituloform {
+  font-size: 2rem;
+  font-family: 'Oswald', sans-serif; }
+
+#cajaformulario {
+  width: 70%;
+  margin-left: 15%; }
+
+#textoformulario {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 1%; }
+
+.botones {
+  margin-left: 1%; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }

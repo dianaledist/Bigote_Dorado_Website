@@ -1,0 +1,51 @@
+#nuestrasbirras {
+    padding: 4%;
+    text-align: center;
+}
+
+.gridgaleria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "foto1 foto2 foto2 foto2"
+        "foto3 foto3 foto3 foto4"
+        "foto5 foto6 foto6 foto6";
+}
+
+.itema {
+    grid-area: foto1;
+}
+
+.itemb {
+    grid-area: foto2;
+
+}
+
+.itemc {
+    grid-area: foto3;
+
+}
+.itemd {
+    grid-area: foto4;
+
+}
+
+.iteme {
+    grid-area: foto5;
+
+}
+
+.itemf {
+    grid-area: foto6;
+
+}
+
+.fotosgrid {
+    width: 100%;
+    display: block; 
+}
+
+.fotosgrid:hover {
+    opacity: 80%;
+}
