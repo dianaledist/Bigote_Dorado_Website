@@ -1,0 +1,77 @@
+[1mdiff --git a/contacto.html b/contacto.html[m
+[1mindex a73e3bc..2be010a 100644[m
+[1m--- a/contacto.html[m
+[1m+++ b/contacto.html[m
+[36m@@ -57,7 +57,62 @@[m
+     <h1 class="sectiontitle__title"> Contacto</h1>[m
+     <form action="archivoqueprocesa.php" method="post" id="cajaformulario">[m
+         <fieldset>[m
+[31m-            <legend id="tituloform">Información Personal</legend>[m
+[32m+[m[41m           [m
+[32m+[m[32m          <div class="container">[m
+[32m+[m[32m            <div class="row">[m
+[32m+[m[32m                <div class="col-md-12">[m
+[32m+[m[32m                    <div class="well well-sm">[m
+[32m+[m[32m                        <form class="form-horizontal" method="post">[m
+[32m+[m[32m                            <fieldset>[m
+[32m+[m[32m                                <legend class="text-center header">Contact us</legend>[m
+[32m+[m[41m        [m
+[32m+[m[32m                                <div class="form-group">[m
+[32m+[m[32m                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>[m
+[32m+[m[32m                                    <div class="col-md-8">[m
+[32m+[m[32m                                        <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                </div>[m
+[32m+[m[32m                                <div class="form-group">[m
+[32m+[m[32m                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>[m
+[32m+[m[32m                                    <div class="col-md-8">[m
+[32m+[m[32m                                        <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                </div>[m
+[32m+[m[41m        [m
+[32m+[m[32m                                <div class="form-group">[m
+[32m+[m[32m                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>[m
+[32m+[m[32m                                    <div class="col-md-8">[m
+[32m+[m[32m                                        <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                </div>[m
+[32m+[m[41m        [m
+[32m+[m[32m                                <div class="form-group">[m
+[32m+[m[32m                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>[m
+[32m+[m[32m                                    <div class="col-md-8">[m
+[32m+[m[32m                                        <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                </div>[m
+[32m+[m[41m        [m
+[32m+[m[32m                                <div class="form-group">[m
+[32m+[m[32m                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>[m
+[32m+[m[32m                                    <div class="col-md-8">[m
+[32m+[m[32m                                        <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                </div>[m
+[32m+[m[41m        [m
+[32m+[m[32m                                <div class="form-group">[m
+[32m+[m[32m                                    <div class="col-md-12 text-center">[m
+[32m+[m[32m                                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>[m
+[32m+[m[32m                                    </div>[m
+[32m+[m[32m                                </div>[m
+[32m+[m[32m                            </fieldset>[m
+[32m+[m[32m                        </form>[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[41m          [m
+[32m+[m[32m          <!--  <legend id="tituloform">Información Personal</legend>[m
+             <p id="textoformulario"><label for="nombre">Nombre: </label>[m
+             <input type="text" name="nombre" placeholder="Ingrese su nombre">[m
+             </p>[m
+[36m@@ -86,7 +141,7 @@[m
+             <input type="reset" id="limpiar_form" value="Limpiar formulario" class="botones">[m
+             <input type="button" id="enviar_form" value="Enviar consulta" class="botones">[m
+ [m
+[31m-           [m
+[32m+[m[32m            -->[m
+         </fieldset>[m
+     </form>[m
+     </section>[m
