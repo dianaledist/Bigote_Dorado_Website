@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;469;500;600;700&display=swap");
+@font-face {
+  font-family: "brandon";
+  src: url("../fonts/brandon-grotesque-black.otf"); }
+
 h1 {
-  font-family: 'Oswald', sans-serif;
-  color: #7c1d00;
+  font-family: "brandon", serif;
+  color: black;
   text-align: center;
   font-size: 4rem; }
 
 h2 {
   font-size: 3rem;
   color: black;
-  font-family: 'Oswald', sans-serif;
+  font-family: "open sans", sans-serif;
   text-align: center; }
 
 .sectiontitle {
@@ -17,15 +21,15 @@ h2 {
   margin-right: 10%; }
 
 .sectiontitle__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: "brandon", serif;
   color: #7c1d00;
   text-align: center;
   font-size: 5rem;
-  padding: 4%; }
+  padding: 3%; }
 
 p {
   font-size: 1.5rem;
-  font-family: 'Oswald', sans-serif;
+  font-family: "open sans", sans-serif;
   text-align: center; }
 
 .header {
@@ -50,8 +54,7 @@ p {
     padding-top: 10%;
     width: 100%;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
-    font-style: italic;
+    font-family: "brandon", serif;
     color: whitesmoke;
     text-shadow: 2px 0 0 black;
     letter-spacing: 2px;
@@ -60,17 +63,19 @@ p {
     padding-top: 3%;
     width: 100%;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: "brandon", serif;
     color: whitesmoke;
     text-shadow: 2px 0 0 black;
     font-size: 7rem; }
 
 .nav {
-  background-color: rgba(0, 0, 0, 0.144); }
+  background-color: rgba(0, 0, 0, 0.596); }
+  .nav .nav-link {
+    text-transform: uppercase; }
   .nav .nav-link:hover {
     color: #e8ab0e !important; }
   .nav .nav__navbar {
-    font-family: 'Oswald', sans-serif;
+    font-family: "brandon", serif;
     color: white;
     font-size: 2rem; }
 
@@ -110,40 +115,116 @@ p {
   background-size: cover;
   background-position: center; }
 
-.index_card {
-  position: relative;
-  width: 25%; }
-
-.image {
-  display: block;
+.wrap {
+  margin: 50px auto 0 auto;
   width: 100%;
-  height: auto; }
+  display: flex;
+  align-items: space-around;
+  max-width: 1200px; }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.tile {
+  width: 380px;
+  height: 380px;
+  margin: 10px;
+  background-color: #e08b00;
+  display: inline-block;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+  overflow: hidden;
+  color: white;
+  font-family: "open sans", serif; }
+
+.tile img {
   height: 100%;
   width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: all 0.4s ease-out; }
 
-.index_card:hover .overlay {
+.tile .text {
+  /*   z-index:99; */
+  position: absolute;
+  padding: 30px;
+  height: calc(100% - 60px); }
+
+.tile h1 {
+  font-weight: 300;
+  margin: 0;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); }
+
+.tile h2 {
+  font-weight: 100;
+  margin: 20px 0 0 0;
+  transform: translateX(200px); }
+
+.tile p {
+  font-weight: 300;
+  margin: 20px 0 0 0;
+  line-height: 25px;
+  /*   opacity:0; */
+  transform: translateX(-200px);
+  transition-delay: 0.2s; }
+
+.animate-text {
+  opacity: 0;
+  transition: all 0.6s ease-in-out; }
+
+.tile:hover {
+  /*   background-color:#99aeff; */
+  box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.64);
+  transform: scale(1.05); }
+
+.tile:hover img {
+  opacity: 0.2; }
+
+.tile:hover .animate-text {
+  transform: translateX(0);
   opacity: 1; }
 
-.text {
-  color: white;
-  font-size: 20px;
+.dots {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center; }
+  bottom: 20px;
+  right: 30px;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  color: currentColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+
+.dots span {
+  width: 5px;
+  height: 5px;
+  background-color: currentColor;
+  border-radius: 50%;
+  display: block;
+  opacity: 0;
+  transition: transform 0.4s ease-out, opacity 0.5s ease;
+  transform: translateY(30px); }
+
+.tile:hover span {
+  opacity: 1;
+  transform: translateY(0px); }
+
+.dots span:nth-child(1) {
+  transition-delay: 0.05s; }
+
+.dots span:nth-child(2) {
+  transition-delay: 0.1s; }
+
+.dots span:nth-child(3) {
+  transition-delay: 0.15s; }
+
+@media (max-width: 1000px) {
+  .wrap {
+    flex-direction: column;
+    width: 400px; } }
 
 /* .indexgaleria{
     width: 100%;

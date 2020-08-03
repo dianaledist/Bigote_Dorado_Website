@@ -26,8 +26,7 @@
             padding-top: 10%;
             width: 100%;
             text-align: center;
-            font-family: 'Oswald', sans-serif;
-            font-style: italic;
+            font-family: "brandon", serif;
             color: whitesmoke;
             text-shadow: 2px 0 0 black;
             letter-spacing: 2px;
@@ -37,7 +36,7 @@
             padding-top: 3%;
             width: 100%;
             text-align: center;
-            font-family: 'Oswald', sans-serif;
+            font-family: "brandon", serif;
             color: whitesmoke;
             text-shadow: 2px 0 0 black;
             font-size: 7rem;
@@ -45,12 +44,15 @@
 }
 
 .nav {
-    background-color: rgba(0, 0, 0, 0.144);
+    background-color: rgba(0, 0, 0, 0.596);
+    .nav-link {
+        text-transform: uppercase;
+    }
     .nav-link:hover{
         color: $amarilloalternativo !important;
     }
     .nav__navbar {
-        font-family: 'Oswald', sans-serif;
+        font-family: "brandon", serif;
         color: white;
         font-size: 2rem;
     }    
