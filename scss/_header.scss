@@ -5,7 +5,6 @@
         &-index {          
             height: 100vh;
             background-image: url('../multimedia/headerindex.jpg');
-            background-attachment: fixed;
         }
         &-quienessomos {
             height: 70vh;
@@ -55,4 +54,8 @@
         color: white;
         font-size: 2rem;
     }    
+}
+
+.navbar-logo {
+    width: 100px;
 }
