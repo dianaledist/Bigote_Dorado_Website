@@ -95,7 +95,6 @@ p {
 .indexfoto {
   height: 80vh;
   background-image: url("../multimedia/indexfoto.jpg");
-  background-attachment: fixed;
   background-size: cover;
   background-position: center; }
 
@@ -120,10 +119,6 @@ p {
 .galeria2:hover {
   opacity: 85%;
   transform: scale(1.05, 1.05); }
-
-#nuestrasbirras {
-  padding: 4%;
-  text-align: center; }
 
 .gridgaleria {
   display: grid;
