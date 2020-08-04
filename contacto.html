@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     
+
+    
 </head>
 <body>
     
@@ -60,13 +62,50 @@
       </header>
 
     <section class="sectiontitle"> 
-    <h1 class="sectiontitle__title"> Contacto</h1>
-    <form action="archivoqueprocesa.php" method="post" id="cajaformulario">
-        <fieldset>
-           
+    <h1 class="sectiontitle__title">Buzón de consultas y sugerencias</h1>
+
+    <div class="container animated">
+
+      <div class="row">
+        <div class="col-sm-12" id="parent">
+          <div class="col-sm-6">
+          <iframe width="100%" height="320px;" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJaY32Qm3KWTkRuOnKfoIVZws&key=AIzaSyAf64FepFyUGZd3WFWhZzisswVx2K37RFY" allowfullscreen></iframe>
+          </div>
+    
+          <div class="col-sm-6 form_left">
+            <form action="archivoqueprocesa.php" class="contact-form" method="post">
+      
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" name="nm" placeholder="Name" required="" autofocus="">
+                </div>
             
+            
+                <div class="form-group ">
+                  <input type="email" class="form-control" id="email" name="em" placeholder="Email" required="">
+                </div>
+            
+              <div class="form-group">
+                   <input type="text" class="form-control" id="phone" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10" placeholder="Mobile No." required="">
+              </div>
+              <div class="form-group">
+              <textarea class="form-control textarea-contact" rows="5" id="comment" name="FB" placeholder="Type Your Message/Feedback here..." required=""></textarea>
+              <br>
+                <button class="btn btn-default btn-send"> <span class="glyphicon glyphicon-send"></span> Send </button>
+              </div>
+             </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </section>
+
+
+    <!-- <form action="archivoqueprocesa.php" method="post" id="cajaformulario">
+        <fieldset>
           
-          <!--  <legend id="tituloform">Información Personal</legend>
+          
+           <legend id="tituloform">Información Personal</legend>
             <p id="textoformulario"><label for="nombre">Nombre: </label>
             <input type="text" name="nombre" placeholder="Ingrese su nombre">
             </p>
@@ -95,17 +134,18 @@
             <input type="reset" id="limpiar_form" value="Limpiar formulario" class="botones">
             <input type="button" id="enviar_form" value="Enviar consulta" class="botones">
 
-            -->
+           
         </fieldset>
     </form>
-    </section>
+    </section> -->
 
 
     <footer class="container-fluid d-flex justify-content-center footer">
 
-        <p class="footer__text">Bigote Dorado 2020 | Todos los derechos reservados</p>
-                       
-      </footer>
+      <p class="footer__text">Bigote Dorado 2020 | Todos los derechos reservados</p>
+      <div class="footer_redes">
+      </div>         
+    </footer>
 
     <script src="js/wow.min.js"></script>
     <script>
