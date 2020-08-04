@@ -37,7 +37,8 @@ p {
   background-position: center; }
   .header-index {
     height: 100vh;
-    background-image: url("../multimedia/headerindex.jpg"); }
+    background-image: url("../multimedia/headerindex.jpg");
+    background-size: cover; }
   .header-quienessomos {
     height: 70vh;
     background-image: url("../multimedia/headerquienes.jpg"); }
@@ -51,7 +52,7 @@ p {
     height: 70vh;
     background-image: url("../multimedia/headercontacto.jpg"); }
   .header .header__title {
-    padding-top: 10%;
+    padding-top: 20%;
     width: 100%;
     text-align: center;
     font-family: "brandon", serif;
@@ -69,7 +70,7 @@ p {
     font-size: 7rem; }
 
 .nav {
-  background-color: rgba(0, 0, 0, 0.596); }
+  background-color: #3a2114; }
   .nav .nav-link {
     text-transform: uppercase; }
   .nav .nav-link:hover {

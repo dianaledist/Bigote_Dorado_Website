@@ -5,6 +5,7 @@
         &-index {          
             height: 100vh;
             background-image: url('../multimedia/headerindex.jpg');
+            background-size: cover;
         }
         &-quienessomos {
             height: 70vh;
@@ -23,7 +24,7 @@
             background-image: url('../multimedia/headercontacto.jpg');
         }
         .header__title {
-            padding-top: 10%;
+            padding-top: 20%;
             width: 100%;
             text-align: center;
             font-family: "brandon", serif;
@@ -45,7 +46,7 @@
 }
 
 .nav {
-    background-color: rgba(0, 0, 0, 0.596);
+    background-color: $marronoscuro;
     .nav-link {
         text-transform: uppercase;
     }
@@ -58,6 +59,7 @@
         font-size: 2rem;        
     }    
 }
+
 
 
 .navbar-logo {
