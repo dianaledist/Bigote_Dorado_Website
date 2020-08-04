@@ -41,16 +41,20 @@ p {
     background-size: cover; }
   .header-quienessomos {
     height: 70vh;
-    background-image: url("../multimedia/headerquienes.jpg"); }
+    background-image: url("../multimedia/headerquienes.jpg");
+    background-size: cover; }
   .header-nuestrasbirras {
     height: 70vh;
-    background-image: url("../multimedia/headernuestras.jpg"); }
+    background-image: url("../multimedia/headernuestras.jpg");
+    background-size: cover; }
   .header-cerveblog {
     height: 70vh;
-    background-image: url("../multimedia/headerdonde.jpg"); }
+    background-image: url("../multimedia/headerdonde.jpg");
+    background-size: cover; }
   .header-contacto {
     height: 70vh;
-    background-image: url("../multimedia/headercontacto.jpg"); }
+    background-image: url("../multimedia/headercontacto.jpg");
+    background-size: cover; }
   .header .header__title {
     padding-top: 20%;
     width: 100%;
@@ -68,6 +72,15 @@ p {
     color: whitesmoke;
     text-shadow: 2px 0 0 black;
     font-size: 7rem; }
+  .header .header__maintitle_sub {
+    padding-top: 15%;
+    width: 100%;
+    text-align: center;
+    font-family: "brandon", serif;
+    color: whitesmoke;
+    text-shadow: 2px 0 0 black;
+    letter-spacing: 2px;
+    font-size: 7rem; }
 
 .nav {
   background-color: #3a2114; }
@@ -81,7 +94,8 @@ p {
     font-size: 2rem; }
 
 .navbar-logo {
-  width: 100px; }
+  width: 100px;
+  padding-left: 2%; }
 
 .footer {
   width: 100%;

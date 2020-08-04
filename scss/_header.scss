@@ -10,18 +10,22 @@
         &-quienessomos {
             height: 70vh;
             background-image: url('../multimedia/headerquienes.jpg');
+            background-size: cover;
         }
         &-nuestrasbirras {
             height: 70vh;
             background-image: url('../multimedia/headernuestras.jpg');
+            background-size: cover;
         }
         &-cerveblog {
             height: 70vh;
             background-image: url('../multimedia/headerdonde.jpg');
+            background-size: cover;
         }
         &-contacto {
             height: 70vh;
             background-image: url('../multimedia/headercontacto.jpg');
+            background-size: cover;
         }
         .header__title {
             padding-top: 20%;
@@ -41,6 +45,16 @@
             font-family: "brandon", serif;
             color: whitesmoke;
             text-shadow: 2px 0 0 black;
+            font-size: 7rem;
+        }
+        .header__maintitle_sub {
+            padding-top: 15%;
+            width: 100%;
+            text-align: center;
+            font-family: "brandon", serif;
+            color: whitesmoke;
+            text-shadow: 2px 0 0 black;
+            letter-spacing: 2px;
             font-size: 7rem;
         }
 }
@@ -64,4 +78,5 @@
 
 .navbar-logo {
     width: 100px;
+    padding-left: 2%;
 }
