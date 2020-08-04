@@ -27,6 +27,12 @@ h2 {
   font-size: 5rem;
   padding: 3%; }
 
+.sectiontitle__subtitle {
+  font-size: 3rem;
+  color: black;
+  font-family: "open sans", sans-serif;
+  text-align: center; }
+
 p {
   font-size: 1.5rem;
   font-family: "open sans", sans-serif;
@@ -139,7 +145,8 @@ p {
 
 @media (max-width: 764px) {
   .indexingredientes_frase {
-    display: block; }
+    display: block;
+    padding: 5%; }
   .indexingredientes_fotos {
     display: none; } }
 
@@ -292,17 +299,18 @@ p {
   background: #3a2114;
   color: #fff; }
 
-#historia {
-  text-align: center; }
-
-#galeria {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly; }
-
-.galeria2:hover {
-  opacity: 85%;
-  transform: scale(1.05, 1.05); }
+.quienes_description {
+  padding-top: 5%;
+  padding-bottom: 5%; }
+  .quienes_description-foto {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .quienes_description-texto {
+    font-size: 2rem;
+    font-family: "open sans", sans-serif;
+    padding-left: 5%;
+    padding-right: 5%; }
 
 .section_cervezas {
   display: flex;

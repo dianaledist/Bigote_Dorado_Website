@@ -39,6 +39,10 @@ h2 {
     padding: 3%;
 }
 
+.sectiontitle__subtitle {
+    @include subtitles;
+}
+
 p {
     font-size: 1.5rem;
     font-family: "open sans", sans-serif;
