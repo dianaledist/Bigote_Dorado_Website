@@ -100,11 +100,9 @@ p {
 .footer {
   width: 100%;
   background-color: #3a2114; }
-  .footer__form {
-    width: 50%; }
   .footer__text {
     padding: 1%;
-    font-family: 'Oswald', sans-serif;
+    font-family: "brandon", serif;
     color: whitesmoke; }
 
 .indexingredientes {
@@ -325,6 +323,38 @@ p {
 
 .fotosgrid:hover {
   opacity: 80%; }
+
+.header-title {
+  text-align: center;
+  color: #00bfff; }
+
+#tip {
+  display: none; }
+
+.fadeIn {
+  animation-duration: 3s; }
+
+.form-control {
+  border-radius: 0px;
+  border: 1px solid #EDEDED; }
+
+.form-control:focus {
+  border: 1px solid #00bfff; }
+
+.textarea-contact {
+  resize: none; }
+
+.btn-send {
+  border-radius: 0px;
+  border: 1px solid #00bfff;
+  background: #00bfff;
+  color: #fff; }
+
+.btn-send:hover {
+  border: 1px solid #00bfff;
+  background: #fff;
+  color: #00bfff;
+  transition: background 0.5s; }
 
 /* 
 #textoformulario{

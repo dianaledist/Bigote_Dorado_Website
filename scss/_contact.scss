@@ -1,37 +1,50 @@
+.header-title
+        {
+          text-align: center;
+          color:#00bfff;
+        }
 
+        #tip 
+        {
+            display:none;  
+        }
 
-.form-control
-{
-    border-radius:0px;
-    border:1px solid #EDEDED;
-    float: left;
-}
+        .fadeIn
+        {
+          animation-duration: 3s;
+        }
 
-.form-control:focus
-{
-    border:1px solid #00bfff;
-}
+        .form-control
+        {
+        	border-radius:0px;
+        	border:1px solid #EDEDED;
+        }
 
-.textarea-contact
-{
-    resize:none; 
-}
+        .form-control:focus
+        {
+        	border:1px solid #00bfff;
+        }
 
-.btn-send
-{
-    border-radius: 0px;
-    border:1px solid #00bfff;
-    background:#00bfff;
-    color:#fff; 
-}
+        .textarea-contact
+        {
+        	resize:none; 
+        }
 
-.btn-send:hover
-{
-    border:1px solid #00bfff;
-    background:#fff;
-    color:#00bfff;
-    transition:background 0.5s;   
-}
+        .btn-send
+        {
+        	border-radius: 0px;
+        	border:1px solid #00bfff;
+        	background:#00bfff;
+        	color:#fff; 
+        }
+
+        .btn-send:hover
+        {
+        	border:1px solid #00bfff;
+        	background:#fff;
+        	color:#00bfff;
+        	transition:background 0.5s;   
+        }
 
 
 /* 
