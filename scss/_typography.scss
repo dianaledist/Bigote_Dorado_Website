@@ -49,12 +49,7 @@ p {
     text-align: center;
 }
 
-.enlaces_blog {
-    color: $colorladrillo;
-    font-weight: bold !important;
-    &:hover {
-        font-weight: bold !important;
-        color: $amarilloacento;
-    }
+.label_contacto {
+    font-size: 1.5rem;
+    font-family: "open sans", sans-serif;
 }
-

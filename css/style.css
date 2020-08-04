@@ -38,12 +38,9 @@ p {
   font-family: "open sans", sans-serif;
   text-align: center; }
 
-.enlaces_blog {
-  color: #7c1d00;
-  font-weight: bold !important; }
-  .enlaces_blog:hover {
-    font-weight: bold !important;
-    color: #e08b00; }
+.label_contacto {
+  font-size: 1.5rem;
+  font-family: "open sans", sans-serif; }
 
 .header {
   background-size: cover;
@@ -368,6 +365,9 @@ p {
 .contacto {
   padding-bottom: 4%; }
 
+textarea {
+  min-height: 100px; }
+
 .boton_primario {
   background-color: #e08b00 !important;
   border: 0 !important; }
@@ -378,6 +378,13 @@ p {
 .form-control:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 136, 0, 0.6) !important;
   border: 0 !important; }
+
+.enlaces_blog {
+  color: #7c1d00;
+  font-weight: bold !important; }
+  .enlaces_blog:hover {
+    font-weight: bold !important;
+    color: #e08b00; }
 
 * {
   padding: 0;
