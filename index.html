@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     
+    <script type="text/javascript" src="js/codigo.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
@@ -21,7 +22,7 @@
 </head>
 <body>
       
-  <div class="modal" id="myModal" tabindex="-1" role="dialog">
+<!--   <div class="modal" id="myModal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -39,59 +40,63 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
     
     <header class="header header-index">
   
-    <nav class="navbar navbar-expand-lg navbar-dark nav">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar nav">
         <div class="navbar-logo">
           <a href="index.html">
-              <img src="Multimedia/bigote_dorado.png" alt="logo">
+              <img src="multimedia/bigote_dorado.svg" alt="logo">
           </a>
         </div> 
         
-        <div class="collapse navbar-collapse nav__navbar" id="navbarNav">
-          <ul class="navbar-nav w-100 justify-content-center">
-              <li class="nav-item active">
-                <a class="nav-link mr-5" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mr-5" href="quienes_somos.html">Quiénes somos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mr-5" href="nuestras_birras.html">Nuestras birras</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mr-5" href="cerveblog.html">Cerveblog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mr-5" href="contacto.html">Contacto</a>
-              </li>
-          </ul>
-        </div>
-  
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse nav__navbar" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto w-100 justify-content-center">
+                <li class="nav-item active">
+                  <a class="nav-link mr-5" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mr-5" href="quienes_somos.html">Quiénes somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mr-5" href="nuestras_birras.html">Nuestras birras</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mr-5" href="cerveblog.html">Cerveblog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mr-5" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
     </nav>
+    <div class="view header-index">
+      <div class="full-bg-img">
+          <div class="mask rgba-black-light flex-center">
+              <div class="container text-center white-text">
+                  <div class="white-text text-center wow fadeInUp">
+                    <h1 class="header__title">Deliciosas cervezas para paladares exigentes</h1>
+                    <h1 class="animate__bounceIn header__maintitle">Birras que dejan huellas</h1>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
   
-  
-    <div>
-      <h1 class="header__title">Deliciosas cervezas para paladares exigentes</h1>
-    </div>
-  
-    <div>
-      <h1 class="animate__bounceIn header__maintitle">Birras que dejan huellas</h1>
-    </div>
   
   </header>
 
   <section class="indexingredientes">
-        <img src="Multimedia/indexingred1.png" width="200px" height="200px">
-        <img src="Multimedia/indexingred2.png" width="200px" height="200px">
-        <img src="Multimedia/indexingred3.png" width="200px" height="200px">
+        <img src="multimedia/indexingred1.png" class="img-fluid indexingredientes_fotos">
+        <img src="multimedia/indexingred2.png" class="img-fluid indexingredientes_fotos">
+        <img src="multimedia/indexingred3.png" class="img-fluid indexingredientes_fotos">
+        <img src="multimedia/bigote_dorado.svg" class="img-fluid indexingredientes_frase">
   </section>  
 
   <section class="indexfoto">
@@ -101,51 +106,81 @@
     <h1 class="sectiontitle__title">Los mejores estilos craft beer de tu ciudad</h1>
   </section>
 
+  <div class="wrap">
+    <div class="tile"> 
+      <img src='multimedia/indexlager.png'/>
+      <div class="text">
+      <h1>PROMO VERANO</h1>
+      <h2 class="animate-text">Bigote Dorado 50% OFF</h2>
+      <p class="animate-text">Disfruta de unas buenas cervezas en casa usando el código VERANO20</p>
+    <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      </div>
+     </div>
+    
+    
+    <div class="tile"> 
+      <img src='multimedia/indexipa.png'/>
+      <div class="text">
+      <h1>BEER & HEALTH</h1>
+      <h2 class="animate-text">El lúpulo tiene grandes beneficios para la salud</h2>
+      <p class="animate-text">Recientes estudios confirman que tomar cerveza de forma moderada mejora el estado de ánimo y el bienestar general</p>
+    <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      </div>
+     </div>
+     
+      
+      <div class="tile"> 
+      <img src='multimedia/indexweiss.png'/>
+      <div class="text">
+      <h1>DELIVERY BIGOTE DORADO</h1>
+      <h2 class="animate-text">Trabajamos para satisfacer a nuestra cervecomunidad</h2>
+      <p class="animate-text">Estamos tomando todas las precauciones de higiene y seguridad para que puedas disfrutar de una terraza en tu casa</p>
+    <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      </div>
+     </div>
+    </div>
+      
+      
+    </div>
 
-    <section class="d-flex justify-content-around indexgaleria"> 
-        <div class="card indexgaleria__card" style="width: 18rem;">
-            <img src="multimedia/indexlager.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Lager es un tipo de cerveza con fermentación baja, con sabor acentuado y se sirve bien fría</p>
-            </div>
-          </div>
-
-          <div class="card indexgaleria__card" style="width: 18rem;">
-            <img src="multimedia/indexpilsner.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Pilsener es un subtipo de lager elaborada en el siglo XIX en la ciudad checa de Pilsen</p>
-            </div>
-          </div>
-
-          <div class="card indexgaleria__card" style="width: 18rem;">
-            <img src="multimedia/indexipa.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">La IPA es un estilo de cerveza de tradición inglesa que se caracteriza como una ale pálida y espumosa</p>
-            </div>
-          </div>
-
-          <div class="card" style="width: 18rem;">
-            <img src="multimedia/indexweiss.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">La weissbier es una variedad de cerveza de trigo típica de la región de Baviera, sur de Alemania</p>
-            </div>
-          </div>
-    </section>
-
-    <h1>Bigote dorado en los medios de comunicación</h1>
-    <div class="rounded img-fluid"><img src="https://www.cervezaslavirgen.com/wp-content/themes/lavirgen/img/imagen-premios-footer.png"></div>
+    <section class="home-newsletter">
+      <div class="container">
+      <div class="row">
+      <div class="col-sm-12">
+        <div class="single">
+          <h1 class="header__title">Suscribite a nuestro Newsletter</h2>
+        <div class="input-group">
+               <input type="email" class="form-control" placeholder="Ingresá tu e-mail">
+               <span class="input-group-btn">
+               <button class="btn btn-theme" type="submit">Suscribite</button>
+               </span>
+                </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </section>
 
     <footer class="container-fluid d-flex justify-content-center footer">
 
       <p class="footer__text">Bigote Dorado 2020 | Todos los derechos reservados</p>
-        <form class="footer__form">
-            <div class="form-group">
-                <p>Suscribite a nuestro newsletter para recibir novedades de tus cervezas favoritas</p>
-              <label for="exampleInputEmail1">Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <button type="submit" class="btn btn-primary">Suscribite</button>
-        </form>                
+      <div class="footer_redes">
+        <img src="multimedia/facebook.png" alt="facebook" class="footer_redes_red">
+        <img src="multimedia/instagram.png" alt="instagram" class="footer_redes_red">
+        <img src="multimedia/twitter.png" alt="twitter" class="footer_redes_red">
+      </div>         
     </footer>
 
     <script src="js/wow.min.js"></script>

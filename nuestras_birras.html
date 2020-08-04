@@ -15,55 +15,62 @@
     
     <header class="header header-nuestrasbirras">
   
-        <nav class="navbar navbar-expand-lg navbar-dark nav">
-            <div class="navbar-logo">
-              <a href="index.html">
-                  <img src="Multimedia/bigote_dorado.png" alt="logo">
-              </a>
-            </div> 
-            
-            <div class="collapse navbar-collapse nav__navbar"  id="navbarNav">
-              <ul class="navbar-nav w-100 justify-content-center">
-                  <li class="nav-item">
-                    <a class="nav-link mr-5" href="index.html">Home </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mr-5" href="quienes_somos.html">Quiénes somos</a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link mr-5" href="nuestras_birras.html">Nuestras birras <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mr-5" href="cerveblog.html">Cerveblog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link mr-5" href="contacto.html">Contacto</a>
-                  </li>
-              </ul>
-            </div>
-      
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-        </nav>
-      
-        <div>
-          <h1 class="animate__bounceIn header__maintitle">Nuestras birras</h1>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar nav">
+        <div class="navbar-logo">
+          <a href="index.html">
+              <img src="multimedia/bigote_dorado.svg" alt="logo">
+          </a>
+        </div> 
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav__navbar" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto w-100 justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link mr-5" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mr-5" href="quienes_somos.html">Quiénes somos</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link mr-5" href="nuestras_birras.html">Nuestras birras</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mr-5" href="cerveblog.html">Cerveblog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mr-5" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
         </div>
+      </nav>
+      <div class="view header-nuestrasbirras">
+        <div class="full-bg-img">
+            <div class="mask rgba-black-light flex-center">
+                <div class="container text-center white-text">
+                    <div class="white-text text-center wow fadeInUp">              
+                      <h1 class="animate__bounceIn header__maintitle_sub">Cervezas</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
       
-      </header>
+  </header>
 
-        <div id="nuestrasbirras">
-            <section class="sectiontitle"> <h1 class="sectiontitle__title"> Las birras de casa</h1>
-            <article><h2>Lager</h2>
-            <p>Lager es un tipo de cerveza con fermentación más baja, con sabor acentuado y se sirve fría, caracterizada por fermentar en condiciones más lentas empleando levaduras especiales, conocidas como levaduras de fermentación baja, y que en las últimas partes del proceso son almacenadas en bodegas (o lagered -de allí su nombre-) durante un período en condiciones de baja temperatura con el objeto de limpiar las partículas residuales y estabilizar los sabores. Los ejemplos más populares de cerveza de tipo lager son los pale lagers o pilseners.</p></article>
-            <article><h2>Pilsener</h2>
-            <p>Pilsener es un subtipo de lager elaborada originalmente en el siglo XIX en la ciudad checa de Pilsen, al oeste de la región histórica de Bohemia, en el entonces Imperio austrohúngaro. Están hechas con maltas de Moravia tipo pilsen, agua de baja dureza y sobre todo con lúpulo checo de Zatec (Saaz) que varía del 2 al 5% de alfa ácidos, y es fermentado con levadura de baja fermentación. Es una bebida de color claro y su contenido de alcohol es medio (de entorno a 3 al 5%) al igual que su extracto.</p></article>
-            <article><h2>Indian Pale Ale</h2>
-            <p>Muy populares hoy en día, la India Pale Ale (IPA) es un estilo de cerveza de tradición inglesa que se caracteriza como una ale pálida y espumosa con un alto nivel del alcohol y de lúpulo. La creación de la India pale ale durante la década de 1790 fue el resultado de esfuerzos de los cerveceros británicos por superar un problema difícil: a comienzos del siglo XVIII la cerveza no se conservaba bien en los largos viajes por el océano, especialmente en climas cálidos.​ Estos ambientes hacían que la cerveza se volviese caduca y agria.</p></article>
-            <article><h2>Weissbier - Cerveza de trigo</h2>
-            <p>Muy populares hoy en día, la India Pale Ale (IPA) es un estilo de cerveza de tradición inglesa que se caracteriza como una ale pálida y espumosa con un alto nivel del alcohol y de lúpulo. La creación de la India pale ale durante la década de 1790 fue el resultado de esfuerzos de los cerveceros británicos por superar un problema difícil: a comienzos del siglo XVIII la cerveza no se conservaba bien en los largos viajes por el océano, especialmente en climas cálidos.​ Estos ambientes hacían que la cerveza se volviese caduca y agria.</p></article>
-            </section>
+        <div>
+            <h1 class="sectiontitle__title">Sabores</h1>
+        </div>
+
+        <div class="section_cervezas">
+          <div class="section_cervezas_card">
+            <img src="multimedia/nuestras_lager.png" alt="lager" class="seccion_fotos_size">
+            <h1 class="header__title seccion_fotos_size">Lager</h1>
+          </div>
+          <img src="multimedia/nuestras_pale.png" alt="pale aler" class="seccion_fotos_size">
+          <img src="multimedia/nuestras_pilsen.png" alt="pilsen" class="seccion_fotos_size">
+          <img src="multimedia/nuestras_trigo.png" alt="trigo" class="seccion_fotos_size">
         </div>
 
 
@@ -91,9 +98,11 @@
         </section>
 
 
-    <footer class="footer">
-          <p class="footer__text">Bigote Dorado 2020 - Todos los derechos reservados</p>
-    </footer>
+        <footer class="container-fluid d-flex justify-content-center footer">
+
+          <p class="footer__text">Bigote Dorado 2020 | Todos los derechos reservados</p>
+                     
+        </footer>
 
 
     <script src="js/wow.min.js"></script>

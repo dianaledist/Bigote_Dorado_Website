@@ -5,54 +5,77 @@
         &-index {          
             height: 100vh;
             background-image: url('../multimedia/headerindex.jpg');
-            background-attachment: fixed;
+            background-size: cover;
         }
         &-quienessomos {
             height: 70vh;
             background-image: url('../multimedia/headerquienes.jpg');
+            background-size: cover;
         }
         &-nuestrasbirras {
             height: 70vh;
             background-image: url('../multimedia/headernuestras.jpg');
+            background-size: cover;
         }
         &-cerveblog {
             height: 70vh;
             background-image: url('../multimedia/headerdonde.jpg');
+            background-size: cover;
         }
         &-contacto {
             height: 70vh;
             background-image: url('../multimedia/headercontacto.jpg');
+            background-size: cover;
         }
         .header__title {
-            padding-top: 10%;
+            padding-top: 20%;
             width: 100%;
             text-align: center;
-            font-family: 'Oswald', sans-serif;
-            font-style: italic;
+            font-family: "brandon", serif;
             color: whitesmoke;
             text-shadow: 2px 0 0 black;
             letter-spacing: 2px;
             font-size: 2.5rem;
+
         }
         .header__maintitle {
             padding-top: 3%;
             width: 100%;
             text-align: center;
-            font-family: 'Oswald', sans-serif;
+            font-family: "brandon", serif;
             color: whitesmoke;
             text-shadow: 2px 0 0 black;
+            font-size: 7rem;
+        }
+        .header__maintitle_sub {
+            padding-top: 15%;
+            width: 100%;
+            text-align: center;
+            font-family: "brandon", serif;
+            color: whitesmoke;
+            text-shadow: 2px 0 0 black;
+            letter-spacing: 2px;
             font-size: 7rem;
         }
 }
 
 .nav {
-    background-color: rgba(0, 0, 0, 0.144);
+    background-color: $marronoscuro;
+    .nav-link {
+        text-transform: uppercase;
+    }
     .nav-link:hover{
         color: $amarilloalternativo !important;
     }
     .nav__navbar {
-        font-family: 'Oswald', sans-serif;
+        font-family: "brandon", serif;
         color: white;
-        font-size: 2rem;
+        font-size: 2rem;        
     }    
 }
+
+.navbar-logo {
+    width: 100px;
+    padding-left: 2%;
+}
+

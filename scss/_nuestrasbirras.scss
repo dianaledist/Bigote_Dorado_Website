@@ -1,7 +1,17 @@
-#nuestrasbirras {
-    padding: 4%;
-    text-align: center;
+.seccion_cervezas {
+    display: flex; 
+    justify-content: space-evenly;
+    padding-bottom: 5%;
 }
+
+.seccion_fotos_size {
+    width: 8%;
+    &:hover {
+        opacity: 80%;
+    }
+}
+
+
 
 .gridgaleria {
     display: grid;

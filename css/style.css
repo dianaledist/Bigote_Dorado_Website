@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;469;500;600;700&display=swap");
+@font-face {
+  font-family: "brandon";
+  src: url("../fonts/brandon-grotesque-black.otf"); }
+
 h1 {
-  font-family: 'Oswald', sans-serif;
-  color: #7c1d00;
+  font-family: "brandon", serif;
+  color: black;
   text-align: center;
   font-size: 4rem; }
 
 h2 {
   font-size: 3rem;
   color: black;
-  font-family: 'Oswald', sans-serif;
+  font-family: "open sans", sans-serif;
   text-align: center; }
 
 .sectiontitle {
@@ -17,15 +21,15 @@ h2 {
   margin-right: 10%; }
 
 .sectiontitle__title {
-  font-family: 'Oswald', sans-serif;
+  font-family: "brandon", serif;
   color: #7c1d00;
   text-align: center;
   font-size: 5rem;
-  padding: 4%; }
+  padding: 3%; }
 
 p {
   font-size: 1.5rem;
-  font-family: 'Oswald', sans-serif;
+  font-family: "open sans", sans-serif;
   text-align: center; }
 
 .header {
@@ -34,25 +38,28 @@ p {
   .header-index {
     height: 100vh;
     background-image: url("../multimedia/headerindex.jpg");
-    background-attachment: fixed; }
+    background-size: cover; }
   .header-quienessomos {
     height: 70vh;
-    background-image: url("../multimedia/headerquienes.jpg"); }
+    background-image: url("../multimedia/headerquienes.jpg");
+    background-size: cover; }
   .header-nuestrasbirras {
     height: 70vh;
-    background-image: url("../multimedia/headernuestras.jpg"); }
+    background-image: url("../multimedia/headernuestras.jpg");
+    background-size: cover; }
   .header-cerveblog {
     height: 70vh;
-    background-image: url("../multimedia/headerdonde.jpg"); }
+    background-image: url("../multimedia/headerdonde.jpg");
+    background-size: cover; }
   .header-contacto {
     height: 70vh;
-    background-image: url("../multimedia/headercontacto.jpg"); }
+    background-image: url("../multimedia/headercontacto.jpg");
+    background-size: cover; }
   .header .header__title {
-    padding-top: 10%;
+    padding-top: 20%;
     width: 100%;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
-    font-style: italic;
+    font-family: "brandon", serif;
     color: whitesmoke;
     text-shadow: 2px 0 0 black;
     letter-spacing: 2px;
@@ -61,19 +68,34 @@ p {
     padding-top: 3%;
     width: 100%;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: "brandon", serif;
     color: whitesmoke;
     text-shadow: 2px 0 0 black;
     font-size: 7rem; }
+  .header .header__maintitle_sub {
+    padding-top: 15%;
+    width: 100%;
+    text-align: center;
+    font-family: "brandon", serif;
+    color: whitesmoke;
+    text-shadow: 2px 0 0 black;
+    letter-spacing: 2px;
+    font-size: 7rem; }
 
 .nav {
-  background-color: rgba(0, 0, 0, 0.144); }
+  background-color: #3a2114; }
+  .nav .nav-link {
+    text-transform: uppercase; }
   .nav .nav-link:hover {
     color: #e8ab0e !important; }
   .nav .nav__navbar {
-    font-family: 'Oswald', sans-serif;
+    font-family: "brandon", serif;
     color: white;
     font-size: 2rem; }
+
+.navbar-logo {
+  width: 100px;
+  padding-left: 2%; }
 
 .footer {
   width: 100%;
@@ -86,28 +108,170 @@ p {
     color: whitesmoke; }
 
 .indexingredientes {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  padding: 3%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  background-color: #e08b00; }
+  .indexingredientes_fotos {
+    width: 200px; }
+  .indexingredientes_frase {
+    display: none; }
+
+@media (max-width: 764px) {
+  .indexingredientes_frase {
+    display: block; }
+  .indexingredientes_fotos {
+    display: none; } }
 
 .indexfoto {
   height: 80vh;
   background-image: url("../multimedia/indexfoto.jpg");
-  background-attachment: fixed;
   background-size: cover;
   background-position: center; }
 
-.indexgaleria {
+.wrap {
+  margin: 50px auto 0 auto;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  align-items: space-around;
+  max-width: 1200px; }
+
+.tile {
+  width: 380px;
+  height: 380px;
+  margin: 10px;
+  background-color: #e08b00;
+  display: inline-block;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+  overflow: hidden;
+  color: white;
+  font-family: "open sans", serif; }
+
+.tile img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: all 0.4s ease-out; }
+
+.tile .text {
+  /*   z-index:99; */
+  position: absolute;
+  padding: 30px;
+  height: calc(100% - 60px); }
+
+.tile h1 {
+  font-weight: 300;
+  margin: 0;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); }
+
+.tile h2 {
+  font-weight: 100;
+  margin: 20px 0 0 0;
+  transform: translateX(200px); }
+
+.tile p {
+  font-weight: 300;
+  margin: 20px 0 0 0;
+  line-height: 25px;
+  /*   opacity:0; */
+  transform: translateX(-200px);
+  transition-delay: 0.2s; }
+
+.animate-text {
+  opacity: 0;
+  transition: all 0.6s ease-in-out; }
+
+.tile:hover {
+  box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.253);
+  transform: scale(1.05); }
+
+.tile:hover img {
+  opacity: 0.2; }
+
+.tile:hover .animate-text {
+  transform: translateX(0);
+  opacity: 1; }
+
+.dots {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  color: currentColor;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 4%; }
-  .indexgaleria__card:hover {
-    opacity: 80%; }
+  justify-content: space-around; }
+
+.dots span {
+  width: 5px;
+  height: 5px;
+  background-color: currentColor;
+  border-radius: 50%;
+  display: block;
+  opacity: 0;
+  transition: transform 0.4s ease-out, opacity 0.5s ease;
+  transform: translateY(30px); }
+
+.tile:hover span {
+  opacity: 1;
+  transform: translateY(0px); }
+
+.dots span:nth-child(1) {
+  transition-delay: 0.05s; }
+
+.dots span:nth-child(2) {
+  transition-delay: 0.1s; }
+
+.dots span:nth-child(3) {
+  transition-delay: 0.15s; }
+
+@media (max-width: 1000px) {
+  .wrap {
+    flex-direction: column;
+    width: 400px; } }
+
+.header__title {
+  padding-bottom: 4%; }
+
+.home-newsletter {
+  margin-top: 2%;
+  padding: 80px 0;
+  background: #e08b00; }
+
+.home-newsletter .single {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2; }
+
+.home-newsletter .single .form-control {
+  font-size: 1.5rem;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.6);
+  border-color: transparent;
+  border-radius: 20px 0 0 20px; }
+
+.home-newsletter .single .form-control:focus {
+  box-shadow: none;
+  border-color: #7c1d00; }
+
+.home-newsletter .single .btn {
+  font-size: 1.5rem;
+  min-height: 50px;
+  border-radius: 0 20px 20px 0;
+  background: #3a2114;
+  color: #fff; }
 
 #historia {
   text-align: center; }
@@ -121,9 +285,15 @@ p {
   opacity: 85%;
   transform: scale(1.05, 1.05); }
 
-#nuestrasbirras {
-  padding: 4%;
-  text-align: center; }
+.seccion_cervezas {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 5%; }
+
+.seccion_fotos_size {
+  width: 8%; }
+  .seccion_fotos_size:hover {
+    opacity: 80%; }
 
 .gridgaleria {
   display: grid;
@@ -156,25 +326,32 @@ p {
 .fotosgrid:hover {
   opacity: 80%; }
 
-#textoformulario {
-  text-align: left; }
+/* 
+#textoformulario{
+    text-align: left;
+}
 
 #tituloform {
-  font-size: 2rem;
-  font-family: 'Oswald', sans-serif; }
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+}
+
 
 #cajaformulario {
-  width: 70%;
-  margin-left: 15%; }
+    width: 70%;
+    margin-left: 15%;
+}
 
 #textoformulario {
-  margin-top: 1%;
-  margin-bottom: 1%;
-  margin-left: 1%; }
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
 
 .botones {
-  margin-left: 1%; }
-
+    margin-left: 1%;
+}
+ */
 * {
   padding: 0;
   margin: 0;

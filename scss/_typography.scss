@@ -1,6 +1,11 @@
+@font-face {
+    font-family: "brandon";
+    src: url("../fonts/brandon-grotesque-black.otf");
+}
+
 @mixin maintitle {
-    font-family: 'Oswald', sans-serif;
-    color: $colorladrillo;
+    font-family: "brandon", serif;
+    color: $colornegro;
     text-align: center;
     font-size: 4rem;
 }
@@ -12,7 +17,7 @@ h1 {
 @mixin subtitles {
     font-size: 3rem;
     color: $colornegro;
-    font-family: 'Oswald', sans-serif;
+    font-family: "open sans", sans-serif;
     text-align: center;
 }
 
@@ -27,15 +32,15 @@ h2 {
 }
 
 .sectiontitle__title {
-    font-family: 'Oswald', sans-serif;
+    font-family: "brandon", serif;
     color: $colorladrillo;
     text-align: center;
     font-size: 5rem;
-    padding: 4%;
+    padding: 3%;
 }
 
 p {
     font-size: 1.5rem;
-    font-family: 'Oswald', sans-serif;
+    font-family: "open sans", sans-serif;
     text-align: center;
 }
