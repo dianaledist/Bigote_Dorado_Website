@@ -285,6 +285,16 @@ p {
   opacity: 85%;
   transform: scale(1.05, 1.05); }
 
+.seccion_cervezas {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 5%; }
+
+.seccion_fotos_size {
+  width: 8%; }
+  .seccion_fotos_size:hover {
+    opacity: 80%; }
+
 .gridgaleria {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
