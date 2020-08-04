@@ -100,11 +100,32 @@ p {
 .footer {
   width: 100%;
   background-color: #3a2114; }
-  .footer__text {
+  .footer__web {
+    display: flex;
+    flex-wrap: wrap; }
+  .footer__web-text {
     padding: 1%;
     font-family: "brandon", serif;
-    color: whitesmoke; }
+    color: whitesmoke;
+    width: 100%; }
+  .footer__web-social {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; }
+  .footer__web-sociales {
+    max-width: 40px;
+    padding-bottom: 2%; }
 
+/* .footerweb {
+    display: flex;
+    flex-wrap: wrap;
+    &__text {
+        width: 100%;
+    }
+    &__redes {
+        width: 100%;
+    }
+} */
 .indexingredientes {
   padding: 3%;
   display: flex;
@@ -241,30 +262,30 @@ p {
 .header__title {
   padding-bottom: 4%; }
 
-.home-newsletter {
+.index-newsletter {
   margin-top: 2%;
   padding: 80px 0;
   background: #e08b00; }
 
-.home-newsletter .single {
+.index-newsletter .single {
   max-width: 650px;
   margin: 0 auto;
   text-align: center;
   position: relative;
   z-index: 2; }
 
-.home-newsletter .single .form-control {
+.index-newsletter .single .form-control {
   font-size: 1.5rem;
   height: 50px;
   background: rgba(255, 255, 255, 0.6);
   border-color: transparent;
   border-radius: 20px 0 0 20px; }
 
-.home-newsletter .single .form-control:focus {
+.index-newsletter .single .form-control:focus {
   box-shadow: none;
   border-color: #7c1d00; }
 
-.home-newsletter .single .btn {
+.index-newsletter .single .btn {
   font-size: 1.5rem;
   min-height: 50px;
   border-radius: 0 20px 20px 0;

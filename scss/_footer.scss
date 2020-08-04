@@ -1,10 +1,34 @@
 .footer {
     width: 100%;
     background-color: $marronoscuro;
-
-    &__text {
+    &__web {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__web-text {
         padding: 1%;
         font-family: "brandon", serif;
         color: whitesmoke;
+        width: 100%;
+    }
+    &__web-social {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;   
+    }
+    &__web-sociales {
+        max-width: 40px;
+        padding-bottom: 2%;
     }
 }
+
+/* .footerweb {
+    display: flex;
+    flex-wrap: wrap;
+    &__text {
+        width: 100%;
+    }
+    &__redes {
+        width: 100%;
+    }
+} */

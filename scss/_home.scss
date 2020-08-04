@@ -171,29 +171,29 @@ box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.253);
 {
     padding-bottom: 4%;
 }
-.home-newsletter {
+.index-newsletter {
     margin-top: 2%;
     padding: 80px 0;
     background: $amarilloacento;
     }
     
-    .home-newsletter .single {
+    .index-newsletter .single {
     max-width: 650px;
     margin: 0 auto;
     text-align: center;
     position: relative;
     z-index: 2; }
     
-    .home-newsletter .single .form-control {
+    .index-newsletter .single .form-control {
     font-size: 1.5rem;
     height: 50px;
     background: rgba(255, 255, 255, 0.6);
     border-color: transparent;
     border-radius: 20px 0 0 20px; }
-    .home-newsletter .single .form-control:focus {
+    .index-newsletter .single .form-control:focus {
     box-shadow: none;
     border-color: $colorladrillo; }
-    .home-newsletter .single .btn {
+    .index-newsletter .single .btn {
     font-size: 1.5rem;
     min-height: 50px; 
     border-radius: 0 20px 20px 0;
