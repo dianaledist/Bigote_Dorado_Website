@@ -65,79 +65,33 @@
     <h2 class="sectiontitle__title">Buzón de consultas y sugerencias</h2>
     </section>
 
-    <div class="container animated fadeIn">
-
-      <div class="row">
-        <h1 class="header-title"> Contact </h1>
-        <hr>
-        <div class="col-sm-12" id="parent">
-          <div class="col-sm-6">
-          <iframe width="100%" height="320px;" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJaY32Qm3KWTkRuOnKfoIVZws&key=AIzaSyAf64FepFyUGZd3WFWhZzisswVx2K37RFY" allowfullscreen></iframe>
-          </div>
     
-          <div class="col-sm-6">
-            <form action="form.php" class="contact-form" method="post">
-      
-                <div class="form-group">
-                  <input type="text" class="form-control" id="name" name="nm" placeholder="Name" required="" autofocus="">
-                </div>
-            
-            
-                <div class="form-group form_left">
-                  <input type="email" class="form-control" id="email" name="em" placeholder="Email" required="">
-                </div>
-            
-              <div class="form-group">
-                   <input type="text" class="form-control" id="phone" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10" placeholder="Mobile No." required="">
-              </div>
-              <div class="form-group">
-              <textarea class="form-control textarea-contact" rows="5" id="comment" name="FB" placeholder="Type Your Message/Feedback here..." required=""></textarea>
-              <br>
-                <button class="btn btn-default btn-send"> <span class="glyphicon glyphicon-send"></span> Send </button>
-              </div>
-             </form>
-          </div>
+    <div class="contacto container-fluid">
+      <div class="row"> 
+        <div class="contacto_mapa col-sm-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11474.289937427617!2d-3.6382425098626534!3d40.383442513811794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4225b902766387%3A0x230adc90f4dd0fa1!2sMiguel%20Hern%C3%A1ndez!5e0!3m2!1ses!2ses!4v1596567891245!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="contacto_form col-sm-6">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Correo electrónico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">No se compartirán tus datos personales</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputConsulta">Consulta</label>
+              <input type="text" class="form-control" id="exampleInputConsulta" placeholder="Escriba su consulta">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Acepto las condiciones de privacidad</label>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary boton_primario">Enviar consulta</button>
+          </form>
         </div>
       </div>
     </div>
-
-    <!-- <form action="archivoqueprocesa.php" method="post" id="cajaformulario">
-        <fieldset>
-          
-          
-           <legend id="tituloform">Información Personal</legend>
-            <p id="textoformulario"><label for="nombre">Nombre: </label>
-            <input type="text" name="nombre" placeholder="Ingrese su nombre">
-            </p>
-                
-            <p id="textoformulario"><label for="apellido">Apellido: </label>
-            <input type="text" name="apellido" placeholder="Ingrese su apellido">
-            </p>
-
-            <p id="textoformulario"><label for="mail">E-mail: </label>
-            <input type="email" name="mail" placeholder="Ingrese su e-mail">
-            </p>
-
-            <select name="opciones" class="botones">
-                <option disabled selected>Motivo de tu consulta</option>
-                <option value="solicitar">Solicitar información</option>
-                <option value="sugerencias">Sugerencias</option>
-            </select>
-
-            <p id="textoformulario">¿Desea recibir el Newsletter?
-                <input type="checkbox" class="botones">
-            </p>
-
-            <p id="textoformulario"><textarea placeholder="Escriba su consulta"></textarea>
-            </p>    
-
-            <input type="reset" id="limpiar_form" value="Limpiar formulario" class="botones">
-            <input type="button" id="enviar_form" value="Enviar consulta" class="botones">
-
-           
-        </fieldset>
-    </form>
-    </section> -->
 
 
     <footer class="container-fluid d-flex justify-content-center footer">
