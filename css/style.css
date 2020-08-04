@@ -27,10 +27,20 @@ h2 {
   font-size: 5rem;
   padding: 3%; }
 
+.sectiontitle__subtitle {
+  font-size: 3rem;
+  color: black;
+  font-family: "open sans", sans-serif;
+  text-align: center; }
+
 p {
   font-size: 1.5rem;
   font-family: "open sans", sans-serif;
   text-align: center; }
+
+.label_contacto {
+  font-size: 1.5rem;
+  font-family: "open sans", sans-serif; }
 
 .header {
   background-size: cover;
@@ -100,13 +110,32 @@ p {
 .footer {
   width: 100%;
   background-color: #3a2114; }
-  .footer__form {
-    width: 50%; }
-  .footer__text {
+  .footer__web {
+    display: flex;
+    flex-wrap: wrap; }
+  .footer__web-text {
     padding: 1%;
-    font-family: 'Oswald', sans-serif;
-    color: whitesmoke; }
+    font-family: "brandon", serif;
+    color: whitesmoke;
+    width: 100%; }
+  .footer__web-social {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; }
+  .footer__web-sociales {
+    max-width: 40px;
+    padding-bottom: 2%; }
 
+/* .footerweb {
+    display: flex;
+    flex-wrap: wrap;
+    &__text {
+        width: 100%;
+    }
+    &__redes {
+        width: 100%;
+    }
+} */
 .indexingredientes {
   padding: 3%;
   display: flex;
@@ -120,7 +149,8 @@ p {
 
 @media (max-width: 764px) {
   .indexingredientes_frase {
-    display: block; }
+    display: block;
+    padding: 5%; }
   .indexingredientes_fotos {
     display: none; } }
 
@@ -243,57 +273,63 @@ p {
 .header__title {
   padding-bottom: 4%; }
 
-.home-newsletter {
+.index-newsletter {
   margin-top: 2%;
   padding: 80px 0;
   background: #e08b00; }
 
-.home-newsletter .single {
+.index-newsletter .single {
   max-width: 650px;
   margin: 0 auto;
   text-align: center;
   position: relative;
   z-index: 2; }
 
-.home-newsletter .single .form-control {
+.index-newsletter .single .form-control {
   font-size: 1.5rem;
   height: 50px;
   background: rgba(255, 255, 255, 0.6);
   border-color: transparent;
   border-radius: 20px 0 0 20px; }
 
-.home-newsletter .single .form-control:focus {
+.index-newsletter .single .form-control:focus {
   box-shadow: none;
   border-color: #7c1d00; }
 
-.home-newsletter .single .btn {
+.index-newsletter .single .btn {
   font-size: 1.5rem;
   min-height: 50px;
   border-radius: 0 20px 20px 0;
   background: #3a2114;
   color: #fff; }
 
-#historia {
-  text-align: center; }
+.quienes_description {
+  padding-top: 5%;
+  padding-bottom: 5%; }
+  .quienes_description-foto {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .quienes_description-texto {
+    font-size: 2rem;
+    font-family: "open sans", sans-serif;
+    padding-left: 5%;
+    padding-right: 5%; }
 
-#galeria {
+.section_cervezas {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly; }
-
-.galeria2:hover {
-  opacity: 85%;
-  transform: scale(1.05, 1.05); }
-
-.seccion_cervezas {
-  display: flex;
   justify-content: space-evenly;
   padding-bottom: 5%; }
 
-.seccion_fotos_size {
-  width: 8%; }
-  .seccion_fotos_size:hover {
-    opacity: 80%; }
+.section_cervezas_card {
+  width: auto;
+  text-align: center; }
+
+.section_cervezas_card-img {
+  padding-bottom: 10%; }
+  .section_cervezas_card-img:hover {
+    transform: rotate(10deg); }
 
 .gridgaleria {
   display: grid;
@@ -326,32 +362,30 @@ p {
 .fotosgrid:hover {
   opacity: 80%; }
 
-/* 
-#textoformulario{
-    text-align: left;
-}
+.contacto {
+  padding-bottom: 4%; }
 
-#tituloform {
-    font-size: 2rem;
-    font-family: 'Oswald', sans-serif;
-}
+textarea {
+  min-height: 100px; }
 
+.boton_primario {
+  background-color: #e08b00 !important;
+  border: 0 !important; }
 
-#cajaformulario {
-    width: 70%;
-    margin-left: 15%;
-}
+.boton_busqueda {
+  color: #e08b00 !important; }
 
-#textoformulario {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    margin-left: 1%;
-}
+.form-control:focus {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 136, 0, 0.6) !important;
+  border: 0 !important; }
 
-.botones {
-    margin-left: 1%;
-}
- */
+.enlaces_blog {
+  color: #7c1d00;
+  font-weight: bold !important; }
+  .enlaces_blog:hover {
+    font-weight: bold !important;
+    color: #e08b00; }
+
 * {
   padding: 0;
   margin: 0;

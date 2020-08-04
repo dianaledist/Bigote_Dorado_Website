@@ -1,14 +1,15 @@
-#historia {
-    text-align: center;
-}
-
-#galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.galeria2:hover{
-    opacity: 85%;
-    transform: scale(1.05,1.05);
+.quienes_description {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    &-foto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-texto {
+        font-size: 2rem;
+        font-family: "open sans", sans-serif;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }

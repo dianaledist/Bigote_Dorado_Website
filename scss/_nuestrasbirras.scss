@@ -1,13 +1,17 @@
-.seccion_cervezas {
+.section_cervezas {
     display: flex; 
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding-bottom: 5%;
 }
-
-.seccion_fotos_size {
-    width: 8%;
+.section_cervezas_card {
+    width: auto;
+    text-align: center;
+} 
+.section_cervezas_card-img {
+    padding-bottom: 10%;
     &:hover {
-        opacity: 80%;
+        transform: rotate(10deg);
     }
 }
 
