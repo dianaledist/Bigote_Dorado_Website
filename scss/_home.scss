@@ -98,8 +98,8 @@
 }
 .tile:hover
 {
-/*   background-color:#99aeff; */
-box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
+
+box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.253);
   transform:scale(1.05);
 }
 .tile:hover img
@@ -166,3 +166,37 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     width:400px;
   }
 }
+
+.header__title
+{
+    padding-bottom: 4%;
+}
+.home-newsletter {
+    margin-top: 2%;
+    padding: 80px 0;
+    background: $amarilloacento;
+    }
+    
+    .home-newsletter .single {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2; }
+    
+    .home-newsletter .single .form-control {
+    font-size: 1.5rem;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.6);
+    border-color: transparent;
+    border-radius: 20px 0 0 20px; }
+    .home-newsletter .single .form-control:focus {
+    box-shadow: none;
+    border-color: $colorladrillo; }
+    .home-newsletter .single .btn {
+    font-size: 1.5rem;
+    min-height: 50px; 
+    border-radius: 0 20px 20px 0;
+    background: $marronoscuro;
+    color: #fff;
+    }
