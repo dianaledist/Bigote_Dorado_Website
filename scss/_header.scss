@@ -28,18 +28,18 @@
             background-size: cover;
         }
         .header__title {
-            padding-top: 20%;
             width: 100%;
             text-align: center;
             font-family: "brandon", serif;
             color: whitesmoke;
             text-shadow: 2px 0 0 black;
             letter-spacing: 2px;
-            font-size: 2.5rem;
+            font-size: 3rem;
 
         }
         .header__maintitle {
-            padding-top: 3%;
+            border: 1px solid red;
+            padding-top: 15%;
             width: 100%;
             text-align: center;
             font-family: "brandon", serif;
@@ -47,7 +47,7 @@
             text-shadow: 2px 0 0 black;
             font-size: 7rem;
         }
-        .header__maintitle_sub {
+      /*   .header__maintitle {
             padding-top: 15%;
             width: 100%;
             text-align: center;
@@ -57,7 +57,7 @@
             letter-spacing: 2px;
             font-size: 7rem;
         }
-}
+} */
 
 .nav {
     background-color: $marronoscuro;
