@@ -67,7 +67,6 @@
 .card-index-cards h1
 {
   margin:0;
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
 }
 .card-index-cards h2
 {
@@ -91,9 +90,12 @@
 }
 .card-index-cards:hover
 {
-
 box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.253);
-  transform:scale(1.05);
+transform:scale(1.05);
+}
+
+.card-index-cards:hover h1 {
+  color: $colorladrillo;
 }
 .card-index-cards:hover img
 {
