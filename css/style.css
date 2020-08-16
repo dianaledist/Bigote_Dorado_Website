@@ -65,47 +65,46 @@ p {
     height: 70vh;
     background-image: url("../multimedia/headercontacto.jpg");
     background-size: cover; }
+  .header .header__maintitle {
+    padding-top: 20%;
+    width: 100%;
+    text-align: center;
+    font-family: "brandon", serif;
+    color: whitesmoke;
+    text-shadow: 2px 0 0 black;
+    font-size: 7rem; }
   .header .header__title {
     width: 100%;
+    padding-top: 5%;
     text-align: center;
     font-family: "brandon", serif;
     color: whitesmoke;
     text-shadow: 2px 0 0 black;
     letter-spacing: 2px;
     font-size: 3rem; }
-  .header .header__maintitle {
-    border: 1px solid red;
-    padding-top: 15%;
-    width: 100%;
-    text-align: center;
-    font-family: "brandon", serif;
-    color: whitesmoke;
-    text-shadow: 2px 0 0 black;
-    font-size: 7rem; }
-  .header .header__maintitle {
-    padding-top: 15%;
-    width: 100%;
-    text-align: center;
-    font-family: "brandon", serif;
-    color: whitesmoke;
-    text-shadow: 2px 0 0 black;
-    letter-spacing: 2px;
-    font-size: 7rem; }
-
-.nav {
-  background-color: #3a2114; }
-  .nav .nav-link {
-    text-transform: uppercase; }
-  .nav .nav-link:hover {
-    color: #e8ab0e !important; }
-  .nav .nav__navbar {
-    font-family: "brandon", serif;
-    color: white;
-    font-size: 2rem; }
-
-.navbar-logo {
-  width: 100px;
-  padding-left: 2%; }
+  .header .nav {
+    background-color: #3a2114; }
+    .header .nav .nav-link {
+      text-transform: uppercase; }
+    .header .nav .nav-link:hover {
+      color: #e8ab0e !important; }
+    .header .nav .nav__navbar {
+      font-family: "brandon", serif;
+      color: white;
+      font-size: 2rem; }
+  @media (max-width: 1600px) {
+    .header .navbar-logo {
+      width: 150px;
+      padding-left: 2%; } }
+  @media (min-width: 1600px) {
+    .header .navbar-logo {
+      width: 200px;
+      padding-left: 2%; } }
+  @media (min-width: 1600px) {
+    .header .header__maintitle {
+      font-size: 10rem; }
+    .header .header__title {
+      font-size: 5rem; } }
 
 .footer {
   width: 100%;
@@ -146,13 +145,6 @@ p {
     width: 200px; }
   .indexingredientes_frase {
     display: none; }
-
-@media (max-width: 764px) {
-  .indexingredientes_frase {
-    display: block;
-    padding: 5%; }
-  .indexingredientes_fotos {
-    display: none; } }
 
 .indexfoto {
   height: 80vh;
@@ -335,9 +327,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "foto1 foto2 foto2 foto2"
- "foto3 foto3 foto3 foto4"
- "foto5 foto6 foto6 foto6"; }
+  grid-template-areas: "foto1 foto2 foto2 foto2" "foto3 foto3 foto3 foto4" "foto5 foto6 foto6 foto6"; }
 
 .itema {
   grid-area: foto1; }
