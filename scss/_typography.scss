@@ -15,13 +15,13 @@ h1 {
 } 
 
 @mixin subtitles {
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: $colornegro;
     font-family: "open sans", sans-serif;
     text-align: center;
 }
 
-h2 {
+h3 {
     @include subtitles;
 } 
 
