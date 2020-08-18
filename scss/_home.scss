@@ -13,7 +13,7 @@
 }
 
 .indexfoto {
-  min-height: 80vh;
+  min-height: 70vh;
   background-image: url('../multimedia/barrel.jpg');
   background-size: cover;
   background-position: center;
@@ -27,7 +27,7 @@
 padding: 5%;
 &-texto{
   color: white;
-  font-size:12rem;
+  font-size:8rem;
   font-family: "customcraft", serif;
 }
 }
@@ -42,7 +42,7 @@ flex-wrap: wrap;
 }
 &__img{
   padding: 5%;
-  
+  transform: scale(0.8);
 }
 &__texto-title{
   color: white;
@@ -197,6 +197,14 @@ transform:scale(1.05);
     width:400px;
   }
 }
+
+@media (max-width: 400px) {
+  .card-index {
+   flex-direction: column;
+    width:300px;
+  }
+}
+
 
 .header__title
 {

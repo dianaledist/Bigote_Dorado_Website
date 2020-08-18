@@ -62,21 +62,30 @@
         }    
     }
 
-    @media (max-width: 1200px) {
+
+    .navbar-logo {
+        margin-left: 2%;
+        }
+
+
+    .navbar-img {
+        width: 130px;
+        }
+
+/*     @media (max-width: 1400px) {
         .navbar-logo {
         width: 150px;
-        padding-left: 2%;  
+        padding-left: 2%; 
+        padding-right: 2%; 
         }
-        .header__maintitle {
-            padding-top: 25%;
-        }
-    }
+    } */
 
-    @media (min-width: 1200px) {
-        .navbar-logo {
-        width: 200px;
+    @media (min-width: 1401px) {
+       /*  .navbar-logo {
+        width: 160px;
         padding-left: 2%;  
-        }
+        padding-right: 2%; 
+        } */
         .header__maintitle {
             font-size: 10rem;   
         }

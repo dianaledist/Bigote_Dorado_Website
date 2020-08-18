@@ -53,7 +53,14 @@ p {
 
 .header {
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  /*     @media (max-width: 1400px) {
+        .navbar-logo {
+        width: 150px;
+        padding-left: 2%; 
+        padding-right: 2%; 
+        }
+    } */ }
   .header-index {
     height: 100vh;
     background-image: url("../multimedia/headerindex.jpg");
@@ -101,20 +108,21 @@ p {
       font-family: "brandon", serif;
       color: white;
       font-size: 2rem; }
-  @media (max-width: 1200px) {
-    .header .navbar-logo {
-      width: 150px;
-      padding-left: 2%; }
-    .header .header__maintitle {
-      padding-top: 25%; } }
-  @media (min-width: 1200px) {
-    .header .navbar-logo {
-      width: 200px;
-      padding-left: 2%; }
-    .header .header__maintitle {
-      font-size: 10rem; }
-    .header .header__title {
-      font-size: 5rem; } }
+  .header .navbar-logo {
+    margin-left: 2%; }
+  .header .navbar-img {
+    width: 130px; }
+  @media (min-width: 1401px) {
+    .header {
+      /*  .navbar-logo {
+        width: 160px;
+        padding-left: 2%;  
+        padding-right: 2%; 
+        } */ }
+      .header .header__maintitle {
+        font-size: 10rem; }
+      .header .header__title {
+        font-size: 5rem; } }
 
 .footer-bigote {
   background-color: #3a2114;
@@ -212,7 +220,7 @@ p {
     display: none; }
 
 .indexfoto {
-  min-height: 80vh;
+  min-height: 70vh;
   background-image: url("../multimedia/barrel.jpg");
   background-size: cover;
   background-position: center;
@@ -226,7 +234,7 @@ p {
   padding: 5%; }
   .indexfoto__textomes-texto {
     color: white;
-    font-size: 12rem;
+    font-size: 8rem;
     font-family: "customcraft", serif; }
 
 .indexfoto__birrames {
@@ -238,7 +246,8 @@ p {
     width: 65%;
     padding: 5%; }
   .indexfoto__birrames__img {
-    padding: 5%; }
+    padding: 5%;
+    transform: scale(0.8); }
   .indexfoto__birrames__texto-title {
     color: white;
     font-family: "brandon", serif;
@@ -360,6 +369,11 @@ p {
   .card-index {
     flex-direction: column;
     width: 400px; } }
+
+@media (max-width: 400px) {
+  .card-index {
+    flex-direction: column;
+    width: 300px; } }
 
 .header__title {
   padding-bottom: 4%; }
