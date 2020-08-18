@@ -13,11 +13,49 @@
 }
 
 .indexfoto {
-    height: 80vh;
-    background-image: url('../multimedia/indexfoto.jpg');
-    background-size: cover;
-    background-position: center;
+  min-height: 80vh;
+  background-image: url('../multimedia/barrel.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
 }
+.indexfoto__textomes{
+padding: 5%;
+&-texto{
+  color: white;
+  font-size:12rem;
+  font-family: "customcraft", serif;
+}
+}
+.indexfoto__birrames{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+&__texto{
+  width: 65%;
+  padding: 5%;
+}
+&__img{
+  padding: 5%;
+  
+}
+&__texto-title{
+  color: white;
+  font-family: "brandon", serif;
+  font-size: 7rem;
+}
+&__texto-txt{
+  color: white;
+  font-size:3rem;
+  font-family: "brandon-light", serif;
+}
+}
+
 
 .card-index
 {

@@ -4,6 +4,14 @@
   font-family: "brandon";
   src: url("../fonts/brandon-grotesque-black.otf"); }
 
+@font-face {
+  font-family: "brandon-light";
+  src: url("../fonts/brandon-grotesque-light.otf"); }
+
+@font-face {
+  font-family: "customcraft";
+  src: url("../fonts/CustomCraft-Regular.ttf"); }
+
 h1 {
   font-family: "brandon", serif;
   color: black;
@@ -36,12 +44,12 @@ h3 {
 
 p {
   font-size: 1.5rem;
-  font-family: "open sans", sans-serif;
+  font-family: "brandon-light", serif;
   text-align: center; }
 
 .label_contacto {
   font-size: 1.5rem;
-  font-family: "open sans", sans-serif; }
+  font-family: "brandon-light", sans-serif; }
 
 .header {
   background-size: cover;
@@ -93,13 +101,13 @@ p {
       font-family: "brandon", serif;
       color: white;
       font-size: 2rem; }
-  @media (max-width: 2000px) {
+  @media (max-width: 1200px) {
     .header .navbar-logo {
       width: 150px;
       padding-left: 2%; }
     .header .header__maintitle {
       padding-top: 25%; } }
-  @media (min-width: 2000px) {
+  @media (min-width: 1200px) {
     .header .navbar-logo {
       width: 200px;
       padding-left: 2%; }
@@ -204,10 +212,41 @@ p {
     display: none; }
 
 .indexfoto {
-  height: 80vh;
-  background-image: url("../multimedia/indexfoto.jpg");
+  min-height: 80vh;
+  background-image: url("../multimedia/barrel.jpg");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 5%; }
+
+.indexfoto__textomes {
+  padding: 5%; }
+  .indexfoto__textomes-texto {
+    color: white;
+    font-size: 12rem;
+    font-family: "customcraft", serif; }
+
+.indexfoto__birrames {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .indexfoto__birrames__texto {
+    width: 65%;
+    padding: 5%; }
+  .indexfoto__birrames__img {
+    padding: 5%; }
+  .indexfoto__birrames__texto-title {
+    color: white;
+    font-family: "brandon", serif;
+    font-size: 7rem; }
+  .indexfoto__birrames__texto-txt {
+    color: white;
+    font-size: 3rem;
+    font-family: "brandon-light", serif; }
 
 .card-index {
   margin: 50px auto 0 auto;

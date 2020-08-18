@@ -3,6 +3,16 @@
     src: url("../fonts/brandon-grotesque-black.otf");
 }
 
+@font-face {
+    font-family: "brandon-light";
+    src: url("../fonts/brandon-grotesque-light.otf");
+}
+
+@font-face {
+    font-family: "customcraft";
+    src: url("../fonts/CustomCraft-Regular.ttf");
+}
+
 @mixin maintitle {
     font-family: "brandon", serif;
     color: $colornegro;
@@ -45,11 +55,11 @@ h3 {
 
 p {
     font-size: 1.5rem;
-    font-family: "open sans", sans-serif;
+    font-family: "brandon-light", serif;
     text-align: center;
 }
 
 .label_contacto {
     font-size: 1.5rem;
-    font-family: "open sans", sans-serif;
+    font-family: "brandon-light", sans-serif;
 }
