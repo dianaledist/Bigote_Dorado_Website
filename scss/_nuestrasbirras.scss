@@ -29,30 +29,44 @@
 
 .itema {
     grid-area: foto1;
+    background-image: url('../multimedia/foto1.jpg');
+    background-size: cover;
+    height: 400px;
+}
+
+.itema:hover {
+    opacity: 80%;
 }
 
 .itemb {
     grid-area: foto2;
-
+    background-image: url('../multimedia/foto2.jpg');
+    background-size: cover;
 }
+
 
 .itemc {
     grid-area: foto3;
-
+    background-image: url('../multimedia/foto3.jpg');
+    background-size: cover;
 }
+
 .itemd {
     grid-area: foto4;
-
+    background-image: url('../multimedia/foto4.jpg');
+    background-size: cover;
 }
 
 .iteme {
     grid-area: foto5;
-
+    background-image: url('../multimedia/foto5.jpg');
+    background-size: cover;
 }
 
 .itemf {
     grid-area: foto6;
-
+    background-image: url('../multimedia/foto6.jpg');
+    background-size: cover;
 }
 
 .fotosgrid {
@@ -64,8 +78,11 @@
     opacity: 80%;
 }
 
-/* .itemtext {
+.itemtext {
     overflow: hidden;
 }
 
- */
+.itemtext:hover {
+    overflow: visible;
+}
+
