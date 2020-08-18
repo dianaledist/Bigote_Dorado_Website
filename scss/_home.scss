@@ -13,7 +13,7 @@
 }
 
 .indexfoto {
-  min-height: 70vh;
+  min-height: 80vh;
   background-image: url('../multimedia/barrel.jpg');
   background-size: cover;
   background-position: center;
@@ -194,17 +194,9 @@ transform:scale(1.05);
 @media (max-width: 1000px) {
   .card-index {
    flex-direction: column;
-    width:400px;
+    width:350px;
   }
 }
-
-@media (max-width: 400px) {
-  .card-index {
-   flex-direction: column;
-    width:300px;
-  }
-}
-
 
 .header__title
 {

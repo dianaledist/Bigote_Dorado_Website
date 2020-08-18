@@ -1,40 +1,65 @@
 .header {
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     
         &-index {          
             height: 100vh;
             background-image: url('../multimedia/headerindex.jpg');
             background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         &-quienessomos {
             height: 70vh;
             background-image: url('../multimedia/headerquienes.jpg');
             background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         &-nuestrasbirras {
             height: 70vh;
             background-image: url('../multimedia/headernuestras.jpg');
             background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         &-cerveblog {
             height: 70vh;
             background-image: url('../multimedia/headerdonde.jpg');
             background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         &-contacto {
             height: 70vh;
             background-image: url('../multimedia/headercontacto.jpg');
             background-size: cover;
-        }        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }    
+        .header__borde {
+            border: 1px solid red;
+
+        }    
         .header__maintitle {
-            padding-top: 20%;
             width: 100%;
             text-align: center;
             font-family: "brandon", serif;
             color: whitesmoke;
             text-shadow: 2px 0 0 black;
             font-size: 7rem;
+            border: 1px solid red;
         }
         .header__title {
             width: 100%;
@@ -45,6 +70,7 @@
             text-shadow: 2px 0 0 black;
             letter-spacing: 2px;
             font-size: 3rem;
+            border: 1px solid green;
         }
 
     .nav {
@@ -72,22 +98,10 @@
         width: 130px;
         }
 
-/*     @media (max-width: 1400px) {
-        .navbar-logo {
-        width: 150px;
-        padding-left: 2%; 
-        padding-right: 2%; 
-        }
-    } */
 
-    @media (min-width: 1401px) {
-       /*  .navbar-logo {
-        width: 160px;
-        padding-left: 2%;  
-        padding-right: 2%; 
-        } */
+    @media (min-width: 1600px) {
         .header__maintitle {
-            font-size: 10rem;   
+            font-size: 10rem;
         }
         .header__title
         {

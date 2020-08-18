@@ -24,16 +24,6 @@ h1 {
     @include maintitle;
 } 
 
-@mixin subtitles {
-    font-size: 3.5rem;
-    color: $colornegro;
-    font-family: "open sans", sans-serif;
-    text-align: center;
-}
-
-h3 {
-    @include subtitles;
-} 
 
 .sectiontitle {
     width: 80%;
@@ -50,7 +40,10 @@ h3 {
 }
 
 .sectiontitle__subtitle {
-    @include subtitles;
+    font-size: 4rem;
+    color: $colornegro;
+    font-family: "brandon-light", serif;
+    text-align: center;
 }
 
 p {
