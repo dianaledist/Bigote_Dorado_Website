@@ -89,16 +89,13 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-  .header .header__borde {
-    border: 1px solid red; }
   .header .header__maintitle {
     width: 100%;
     text-align: center;
     font-family: "brandon", serif;
     color: whitesmoke;
     text-shadow: 2px 0 0 black;
-    font-size: 7rem;
-    border: 1px solid red; }
+    font-size: 7rem; }
   .header .header__title {
     width: 100%;
     padding-top: 5%;
@@ -107,8 +104,7 @@ p {
     color: whitesmoke;
     text-shadow: 2px 0 0 black;
     letter-spacing: 2px;
-    font-size: 3rem;
-    border: 1px solid green; }
+    font-size: 3rem; }
   .header .nav {
     background-color: #3a2114; }
     .header .nav .nav-link {
@@ -119,6 +115,8 @@ p {
       font-family: "brandon", serif;
       color: white;
       font-size: 2rem; }
+    .header .nav a {
+      cursor: url("../multimedia/cursorbigote.png"), auto; }
   .header .navbar-logo {
     margin-left: 2%; }
   .header .navbar-img {
@@ -445,49 +443,54 @@ p {
 .itema {
   grid-area: foto1;
   background-image: url("../multimedia/foto1.jpg");
-  background-size: cover;
-  height: 400px; }
+  background-size: cover; }
 
 .itema:hover {
-  opacity: 80%; }
+  opacity: 60%; }
 
 .itemb {
   grid-area: foto2;
   background-image: url("../multimedia/foto2.jpg");
   background-size: cover; }
 
+.itemb:hover {
+  opacity: 60%; }
+
 .itemc {
   grid-area: foto3;
   background-image: url("../multimedia/foto3.jpg");
   background-size: cover; }
+
+.itemc:hover {
+  opacity: 60%; }
 
 .itemd {
   grid-area: foto4;
   background-image: url("../multimedia/foto4.jpg");
   background-size: cover; }
 
+.itemd:hover {
+  opacity: 60%; }
+
 .iteme {
   grid-area: foto5;
   background-image: url("../multimedia/foto5.jpg");
   background-size: cover; }
+
+.iteme:hover {
+  opacity: 60%; }
 
 .itemf {
   grid-area: foto6;
   background-image: url("../multimedia/foto6.jpg");
   background-size: cover; }
 
+.itemf:hover {
+  opacity: 60%; }
+
 .fotosgrid {
   width: 100%;
   display: block; }
-
-.fotosgrid:hover {
-  opacity: 80%; }
-
-.itemtext {
-  overflow: hidden; }
-
-.itemtext:hover {
-  overflow: visible; }
 
 .contacto {
   padding-bottom: 4%; }
@@ -511,7 +514,8 @@ textarea {
   font-weight: bold !important; }
   .enlaces_blog:hover {
     font-weight: bold !important;
-    color: #e08b00; }
+    color: #e08b00;
+    cursor: pointer; }
 
 * {
   padding: 0;

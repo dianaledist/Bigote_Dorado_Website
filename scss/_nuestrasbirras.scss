@@ -31,11 +31,10 @@
     grid-area: foto1;
     background-image: url('../multimedia/foto1.jpg');
     background-size: cover;
-    height: 400px;
 }
 
 .itema:hover {
-    opacity: 80%;
+    opacity: 60%;
 }
 
 .itemb {
@@ -44,11 +43,18 @@
     background-size: cover;
 }
 
+.itemb:hover {
+    opacity: 60%;
+}
 
 .itemc {
     grid-area: foto3;
     background-image: url('../multimedia/foto3.jpg');
     background-size: cover;
+}
+
+.itemc:hover {
+    opacity: 60%;
 }
 
 .itemd {
@@ -57,10 +63,18 @@
     background-size: cover;
 }
 
+.itemd:hover {
+    opacity: 60%;
+}
+
 .iteme {
     grid-area: foto5;
     background-image: url('../multimedia/foto5.jpg');
     background-size: cover;
+}
+
+.iteme:hover {
+    opacity: 60%;
 }
 
 .itemf {
@@ -69,20 +83,15 @@
     background-size: cover;
 }
 
+.itemf:hover {
+    opacity: 60%;
+}
+
+
 .fotosgrid {
     width: 100%;
     display: block; 
 }
 
-.fotosgrid:hover {
-    opacity: 80%;
-}
 
-.itemtext {
-    overflow: hidden;
-}
-
-.itemtext:hover {
-    overflow: visible;
-}
 

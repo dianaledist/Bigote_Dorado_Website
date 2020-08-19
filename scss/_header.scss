@@ -48,10 +48,7 @@
             align-items: center;
             justify-content: center;
         }    
-        .header__borde {
-            border: 1px solid red;
-
-        }    
+  
         .header__maintitle {
             width: 100%;
             text-align: center;
@@ -59,7 +56,6 @@
             color: whitesmoke;
             text-shadow: 2px 0 0 black;
             font-size: 7rem;
-            border: 1px solid red;
         }
         .header__title {
             width: 100%;
@@ -70,7 +66,6 @@
             text-shadow: 2px 0 0 black;
             letter-spacing: 2px;
             font-size: 3rem;
-            border: 1px solid green;
         }
 
     .nav {
@@ -86,6 +81,9 @@
             color: white;
             font-size: 2rem;        
         }    
+        a {
+            cursor: url('../multimedia/cursorbigote.png'), auto;
+        }
     }
 
 
