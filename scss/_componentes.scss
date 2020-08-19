@@ -1,11 +1,31 @@
 .boton_primario {
  background-color: $amarilloacento !important;
  border: 0 !important;
+ font-family: "brandon-light", serif;
+ font-size: 1.5rem !important;
+ &:hover{
+     background-color: $colorladrillo !important;
+ }
+}
+
+.boton_secundario {
+    background-color: $marronoscuro !important;
+    font-family: "brandon-light", serif;
+    font-size: 1.5rem !important;
+    &:hover{
+        background-color: $colorladrillo !important;
+    }
 }
 
 .boton_busqueda {
     color: $amarilloacento !important;
 }
+
+.campo_texto {
+    font-family: "brandon-light", serif;
+    font-size: 1.5rem !important;
+}
+
 
 .form-control:focus {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 136, 0, 0.6) !important;
@@ -14,6 +34,8 @@
 
 .enlaces_blog {
     color: $colorladrillo;
+    font-family: "brandon", serif;
+    font-size: 1.3rem !important;
     font-weight: bold !important;
     &:hover {
         font-weight: bold !important;
