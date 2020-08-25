@@ -261,7 +261,7 @@ p {
     font-family: "brandon-light", serif; }
 
 .card-index {
-  margin: 50px auto 0 auto;
+  margin: 10px auto 0 auto;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -269,6 +269,7 @@ p {
   max-width: 1200px; }
 
 .card-index-cards {
+  border-radius: 10px 10px 10px 10px;
   width: 350px;
   height: 380px;
   margin: 1%;
