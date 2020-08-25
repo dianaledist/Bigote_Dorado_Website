@@ -48,7 +48,7 @@ p {
 .text_aclaraciones {
   font-size: 1.3rem;
   font-family: "brandon-light", sans-serif;
-  padding-left: 2%; }
+  padding-left: 3%; }
 
 .modal-title {
   font-family: "brandon", serif;
@@ -272,7 +272,7 @@ p {
   border-radius: 10px 10px 10px 10px;
   width: 350px;
   height: 380px;
-  margin: 1%;
+  margin: 2% 0 2% 0;
   background-color: #e08b00;
   display: inline-block;
   background-size: cover;
