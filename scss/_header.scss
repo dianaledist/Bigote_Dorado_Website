@@ -1,7 +1,6 @@
 .header {
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     
         &-index {          
             height: 100vh;
@@ -86,8 +85,7 @@
         }
     }
 
-
-    .navbar-logo {
+     .navbar-logo {
         margin-left: 2%;
         }
 
@@ -97,15 +95,26 @@
         }
 
 
-    @media (min-width: 1600px) {
+    @media (min-width: 1200px) {
+
         .header__maintitle {
-            font-size: 10rem;
+            font-size: 9rem;
         }
         .header__title
         {
-        font-size: 5rem;
+        font-size: 4rem;
         }
     }
 
+    @media (max-width:1199px) {
+        .header__maintitle {
+            font-size: 6rem;
+        }
+        .header__title 
+        {
+            display: none;
+        }
+    }
 
+ 
 }
