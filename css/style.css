@@ -49,6 +49,11 @@ p {
   font-size: 1.3rem;
   font-family: "brandon-light", sans-serif; }
 
+.modal-title {
+  font-family: "brandon", serif;
+  color: #7c1d00;
+  font-size: 1.5rem; }
+
 .header {
   background-size: cover;
   background-position: center;
