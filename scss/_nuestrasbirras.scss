@@ -29,37 +29,69 @@
 
 .itema {
     grid-area: foto1;
+    background-image: url('../multimedia/foto1.jpg');
+    background-size: cover;
+}
+
+.itema:hover {
+    opacity: 60%;
 }
 
 .itemb {
     grid-area: foto2;
+    background-image: url('../multimedia/foto2.jpg');
+    background-size: cover;
+}
 
+.itemb:hover {
+    opacity: 60%;
 }
 
 .itemc {
     grid-area: foto3;
-
+    background-image: url('../multimedia/foto3.jpg');
+    background-size: cover;
 }
+
+.itemc:hover {
+    opacity: 60%;
+}
+
 .itemd {
     grid-area: foto4;
+    background-image: url('../multimedia/foto4.jpg');
+    background-size: cover;
+}
 
+.itemd:hover {
+    opacity: 60%;
 }
 
 .iteme {
     grid-area: foto5;
+    background-image: url('../multimedia/foto5.jpg');
+    background-size: cover;
+}
 
+.iteme:hover {
+    opacity: 60%;
 }
 
 .itemf {
     grid-area: foto6;
-
+    background-image: url('../multimedia/foto6.jpg');
+    background-size: cover;
 }
+
+.itemf:hover {
+    opacity: 60%;
+}
+
 
 .fotosgrid {
     width: 100%;
     display: block; 
 }
 
-.fotosgrid:hover {
-    opacity: 80%;
-}
+
+

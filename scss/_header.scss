@@ -6,76 +6,115 @@
             height: 100vh;
             background-image: url('../multimedia/headerindex.jpg');
             background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         &-quienessomos {
             height: 70vh;
             background-image: url('../multimedia/headerquienes.jpg');
             background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         &-nuestrasbirras {
             height: 70vh;
             background-image: url('../multimedia/headernuestras.jpg');
             background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         &-cerveblog {
             height: 70vh;
             background-image: url('../multimedia/headerdonde.jpg');
             background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         &-contacto {
             height: 70vh;
             background-image: url('../multimedia/headercontacto.jpg');
             background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }    
+  
+        .header__maintitle {
+            width: 100%;
+            text-align: center;
+            font-family: "brandon", serif;
+            color: whitesmoke;
+            text-shadow: 2px 0 0 black;
+            font-size: 7rem;
         }
         .header__title {
-            padding-top: 20%;
             width: 100%;
+            padding-top: 5%;
             text-align: center;
             font-family: "brandon", serif;
             color: whitesmoke;
             text-shadow: 2px 0 0 black;
             letter-spacing: 2px;
-            font-size: 2.5rem;
-
+            font-size: 3rem;
         }
+
+    .nav {
+        background-color: $marronoscuro;
+        .nav-link {
+            text-transform: uppercase;
+        }
+        .nav-link:hover{
+            color: $amarilloalternativo !important;
+        }
+        .nav__navbar {
+            font-family: "brandon", serif;
+            color: white;
+            font-size: 2rem;        
+        }    
+        a {
+            cursor: url('../multimedia/cursorbigote.png'), auto;
+        }
+    }
+
+     .navbar-logo {
+        margin-left: 2%;
+        }
+
+
+    .navbar-img {
+        width: 130px;
+        }
+
+
+    @media (min-width: 1200px) {
+
         .header__maintitle {
-            padding-top: 3%;
-            width: 100%;
-            text-align: center;
-            font-family: "brandon", serif;
-            color: whitesmoke;
-            text-shadow: 2px 0 0 black;
-            font-size: 7rem;
+            font-size: 9rem;
         }
-        .header__maintitle_sub {
-            padding-top: 15%;
-            width: 100%;
-            text-align: center;
-            font-family: "brandon", serif;
-            color: whitesmoke;
-            text-shadow: 2px 0 0 black;
-            letter-spacing: 2px;
-            font-size: 7rem;
+        .header__title
+        {
+        font-size: 4rem;
         }
-}
-
-.nav {
-    background-color: $marronoscuro;
-    .nav-link {
-        text-transform: uppercase;
     }
-    .nav-link:hover{
-        color: $amarilloalternativo !important;
+
+    @media (max-width:1199px) {
+        .header__maintitle {
+            font-size: 6rem;
+        }
+        .header__title 
+        {
+            display: none;
+        }
     }
-    .nav__navbar {
-        font-family: "brandon", serif;
-        color: white;
-        font-size: 2rem;        
-    }    
-}
 
-.navbar-logo {
-    width: 100px;
-    padding-left: 2%;
+ 
 }
-

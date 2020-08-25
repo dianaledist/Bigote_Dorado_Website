@@ -3,6 +3,16 @@
     src: url("../fonts/brandon-grotesque-black.otf");
 }
 
+@font-face {
+    font-family: "brandon-light";
+    src: url("../fonts/brandon-grotesque-light.otf");
+}
+
+@font-face {
+    font-family: "customcraft";
+    src: url("../fonts/CustomCraft-Regular.ttf");
+}
+
 @mixin maintitle {
     font-family: "brandon", serif;
     color: $colornegro;
@@ -14,16 +24,6 @@ h1 {
     @include maintitle;
 } 
 
-@mixin subtitles {
-    font-size: 3rem;
-    color: $colornegro;
-    font-family: "open sans", sans-serif;
-    text-align: center;
-}
-
-h2 {
-    @include subtitles;
-} 
 
 .sectiontitle {
     width: 80%;
@@ -40,16 +40,31 @@ h2 {
 }
 
 .sectiontitle__subtitle {
-    @include subtitles;
+    font-size: 4rem;
+    color: $colornegro;
+    font-family: "brandon-light", serif;
+    text-align: center;
 }
 
 p {
     font-size: 1.5rem;
-    font-family: "open sans", sans-serif;
+    font-family: "brandon-light", serif;
     text-align: center;
 }
 
 .label_contacto {
     font-size: 1.5rem;
-    font-family: "open sans", sans-serif;
+    font-family: "brandon-light", sans-serif;
+}
+
+.text_aclaraciones {
+    font-size: 1.3rem;
+    font-family: "brandon-light", sans-serif;
+    padding-left: 3%;
+}
+
+.modal-title {
+    font-family: "brandon", serif;
+    color: $colorladrillo;
+    font-size: 1.5rem;
 }
